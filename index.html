@@ -11,15 +11,24 @@
 
   <!-- NAVBAR -->
   <nav class="nav">
-    <div class="container nav__container">
-      <h2 class="logo">Project 1</h2>
-      <ul class="nav__links">
-        <li><a href="#features">Features</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#" class="btn">Get Started</a></li>
-      </ul>
-    </div>
-  </nav>
+  <div class="container nav__container">
+    <h2 class="logo">Project 1</h2>
+
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <ul class="nav__links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#" class="btn">Get Started</a></li>
+    </ul>
+  </div>
+</nav>
+
 
   <!-- HERO -->
   <section class="hero">
@@ -33,9 +42,15 @@
         </p>
         <button class="btn">Get Started</button>
       </div>
-      <div class="hero__image">
-        <figure>
-            <img src="./assets/about.jpg" alt="Home page image" />
+      <div class="hero__image" style="
+      width: 100%;
+      ">
+        <figure style="
+          width: 100%
+          ">
+            <img src="./assets/about.jpg" alt="Home page image" style="
+            width: 100%;
+            " />
           </figure>
       </div>
     </div>
@@ -46,10 +61,18 @@
     <div class="container">
       <p class="trusted__text">Trusted by these companies</p>
       <div class="trusted__logos">
-        <div class="logo__placeholder"></div>
-        <div class="logo__placeholder"></div>
-        <div class="logo__placeholder"></div>
-        <div class="logo__placeholder"></div>
+        <div>
+        <img src="./assets/bass pro.jpg" alt="Company Logo">   
+        </div>
+        <div>
+        <img src="./assets/vine.jpg" alt="Company Logo">
+        </div>
+        <div>
+        <img src="./assets/Gatorade.png" alt="Company Logo">  
+        </div>
+        <div>
+        <img src="./assets/Amd.png" alt="Company Logo">
+        </div>
       </div>
     </div>
   </section>
@@ -64,7 +87,9 @@
 
     <div class="features__grid">
       <div class="feature">
-        <div class="feature__icon"></div>
+        <div class="feature__icon">
+          <img src="/assets/lighning.png" class="feature__img" alt="Fast Performance Icon">
+        </div>
         <h3>Fast Performance</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, dolor?
@@ -72,7 +97,9 @@
       </div>
 
       <div class="feature">
-        <div class="feature__icon"></div>
+        <div class="feature__icon">
+          <img src="/assets/secure.png" class="feature__img" alt="Secure Icon">
+        </div>
         <h3>Secure</h3>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, nobis.
@@ -80,7 +107,9 @@
       </div>
 
       <div class="feature">
-        <div class="feature__icon"></div>
+        <div class="feature__icon">
+          <img src="/assets/slider.png" class="feature__img" alt="Customizable Icon">
+        </div>
         <h3>Customizable</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, possimus?
@@ -88,7 +117,9 @@
       </div>
 
       <div class="feature">
-        <div class="feature__icon"></div>
+        <div class="feature__icon">
+          <img src="/assets/reliable.png" class="feature__img" alt="Responsive Icon">
+        </div>
         <h3>Responsive</h3>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, non.
@@ -96,7 +127,9 @@
       </div>
 
       <div class="feature">
-        <div class="feature__icon"></div>
+        <div class="feature__icon">
+          <img src="/assets/headset.png" class="feature__img" alt="Reliable Icon">
+        </div>
         <h3>Reliable</h3>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, ducimus!
@@ -104,7 +137,9 @@
       </div>
 
       <div class="feature">
-        <div class="feature__icon"></div>
+        <div class="feature__icon">
+          <img src="/assets/easy.png" class="feature__img" alt="Easy to Use Icon">
+        </div>
         <h3>Easy to Use</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, dolores.
@@ -122,10 +157,14 @@
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aliquid nihil officiis voluptate atque assumenda, at expedita sunt accusantium facere commodi iure quam veritatis recusandae asperiores quae consequatur neque accusamus!
         </p>
-        <button class="btn">Learn More</button>
+        <button class="btn" style="
+        margin-top: 12px;"
+        >Learn More</button>
       </div>
       <div class="quality__image">
-        <div class="image__placeholder"></div>
+        <div>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuYlmkMNXbr34vBl6QVWG3B_3Yaxqhjxna-Q&s" alt="Quality Image">
+        </div>
       </div>
     </div>
   </section>
@@ -185,7 +224,9 @@
     </div>
 
     <div class="values__image">
-      <div class="image__placeholder"></div>
+      <div>
+        <img src="https://t4.ftcdn.net/jpg/03/30/38/85/360_F_330388554_S1PDL1gB7CjbpX6JmDsiVxF2EDPGGf8Z.jpg" alt="Values Image">
+      </div>
     </div>
   </div>
 </section>
@@ -203,21 +244,24 @@
     <h3>Personal</h3>
     <p class="price">$9.99</p>
     <p>Basic features for individuals.</p>
-    <button class="btn pricing__btn">Buy Now</button>
+    <button class="btn pricing__btn" style="
+    margin-top: 12px;">Buy Now</button>
   </div>
 
   <div class="pricing__card featured">
     <h3>Professional</h3>
     <p class="price">$19.99</p>
     <p>Best option for most users.</p>
-    <button class="btn pricing__btn">Buy Now</button>
+    <button class="btn pricing__btn" style="
+    margin-top: 12px;">Buy Now</button>
   </div>
 
   <div class="pricing__card">
     <h3>Enterprise</h3>
     <p class="price">$29.99</p>
     <p>Advanced features and support.</p>
-    <button class="btn pricing__btn">Buy Now</button>
+    <button class="btn pricing__btn" style="
+    margin-top: 12px;">Buy Now</button>
     </div>
   </div>
 </section>
@@ -239,16 +283,47 @@
   <section class="cta">
     <div class="container cta__container">
       <h2>Developers All Over the World Trust Us</h2>
-      <button class="btn btn--light">Get Started</button>
+      <button class="btn btn--light" style="margin-top: 12px;">Get Started</button>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <p>© 2025 Project 1. All Rights Reserved.</p>
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__column">
+      <h4>Main</h4>
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
     </div>
-  </footer>
+
+    <div class="footer__column">
+      <h4>Product</h4>
+      <a href="#">Quality</a>
+      <a href="#">Values</a>
+      <a href="#">Testimonials</a>
+    </div>
+
+    <div class="footer__column">
+      <h4>Company</h4>
+      <a href="#">About</a>
+      <a href="#">Careers</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="footer__column">
+      <h4>Legal</h4>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Support</a>
+    </div>
+  </div>
+
+  <p class="footer__copyright">
+    © 2025 Project 1. All Rights Reserved.
+  </p>
+</footer>
+
 
 </body>
 </html>
