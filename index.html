@@ -14,17 +14,20 @@
   <div class="container nav__container">
     <h2 class="logo">Project 1</h2>
 
+    <!-- Mobile toggle -->
     <input type="checkbox" id="menu-toggle" />
+
     <label for="menu-toggle" class="hamburger">
       <span></span>
       <span></span>
       <span></span>
     </label>
 
+    <!-- Links (shared for desktop + mobile) -->
     <ul class="nav__links">
       <li><a href="#features">Features</a></li>
       <li><a href="#pricing">Pricing</a></li>
-      <li><a href="#" class="btn">Get Started</a></li>
+      <li><a href="#" class="btn nav__btn">Get Started</a></li>
     </ul>
   </div>
 </nav>
@@ -40,18 +43,19 @@
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sed, libero assumenda suscipit voluptatem consequuntur velit temporibus in eaque error.
         </p>
-        <button class="btn">Get Started</button>
+        <div class="hero__form">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="hero__input"
+            />
+          <button class="btn hero__submit">Get Started</button>
+        </div>
       </div>
-      <div class="hero__image" style="
-      width: 100%;
-      ">
-        <figure style="
-          width: 100%
-          ">
-            <img src="./assets/about.jpg" alt="Home page image" style="
-            width: 100%;
-            " />
-          </figure>
+      <div class="hero__image">
+        <figure>
+            <img src="./assets/about.jpg" alt="Home page image"/>
+        </figure>
       </div>
     </div>
   </section>
@@ -88,7 +92,7 @@
     <div class="features__grid">
       <div class="feature">
         <div class="feature__icon">
-          <img src="/assets/lighning.png" class="feature__img" alt="Fast Performance Icon">
+          <img src="./assets/lighning.png" class="feature__img" alt="Fast Performance Icon">
         </div>
         <h3>Fast Performance</h3>
         <p>
@@ -98,7 +102,7 @@
 
       <div class="feature">
         <div class="feature__icon">
-          <img src="/assets/secure.png" class="feature__img" alt="Secure Icon">
+          <img src="./assets/secure.png" class="feature__img" alt="Secure Icon">
         </div>
         <h3>Secure</h3>
         <p>
@@ -108,7 +112,7 @@
 
       <div class="feature">
         <div class="feature__icon">
-          <img src="/assets/slider.png" class="feature__img" alt="Customizable Icon">
+          <img src="./assets/slider.png" class="feature__img" alt="Customizable Icon">
         </div>
         <h3>Customizable</h3>
         <p>
@@ -118,7 +122,7 @@
 
       <div class="feature">
         <div class="feature__icon">
-          <img src="/assets/reliable.png" class="feature__img" alt="Responsive Icon">
+          <img src="./assets/reliable.png" class="feature__img" alt="Responsive Icon">
         </div>
         <h3>Responsive</h3>
         <p>
@@ -128,7 +132,7 @@
 
       <div class="feature">
         <div class="feature__icon">
-          <img src="/assets/headset.png" class="feature__img" alt="Reliable Icon">
+          <img src="./assets/headset.png" class="feature__img" alt="Reliable Icon">
         </div>
         <h3>Reliable</h3>
         <p>
@@ -138,7 +142,7 @@
 
       <div class="feature">
         <div class="feature__icon">
-          <img src="/assets/easy.png" class="feature__img" alt="Easy to Use Icon">
+          <img src="./assets/easy.png" class="feature__img" alt="Easy to Use Icon">
         </div>
         <h3>Easy to Use</h3>
         <p>
@@ -225,7 +229,7 @@
 
     <div class="values__image">
       <div>
-        <img src="https://t4.ftcdn.net/jpg/03/30/38/85/360_F_330388554_S1PDL1gB7CjbpX6JmDsiVxF2EDPGGf8Z.jpg" alt="Values Image">
+        <img src="https://t4.ftcdn.net/jpg/03/30/38/85/360_F_330388554_S1PDL1gB7CjbpX6JmDsiVxF2EDPGGf8Z.jpg" style=" width: 100%"alt="Values Image">
       </div>
     </div>
   </div>
@@ -271,12 +275,27 @@
     <div class="container">
       <h2 class="section__title">What Our Customers Say</h2>
       <div class="testimonial__card">
-        <p>
-          “Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, quisquam. Magnam asperiores distinctio unde repellat qui corrupti odio culpa. Dolores..”
-        </p>
-        <span>- Customer Name</span>
-      </div>
+  <p class="testimonial__text">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus omnis quas, inventore iste sint ullam voluptas repudiandae nemo cumque dolore facilis eum non quasi, exercitationem quia quisquam recusandae, libero at.
+
+  </p>
+
+  <div class="testimonial__user">
+    <img src="./assets/Smile.jpg" alt="Customer" class="testimonial__img" />
+    <div class="testimonial__info">
+      <strong>Customer Name</strong>
+      <p class="testimonial__role">Verified User</p>
     </div>
+  </div>
+
+  <div class="testimonial__controls">
+    <button class="arrow">&#8592;</button>
+    <button class="arrow">&#8594;</button>
+  </div>
+</div>
+
+</div>
+
   </section>
 
   <!-- CALL TO ACTION -->
